@@ -1,3 +1,5 @@
 {
-  "extends": "rallycoding"
+  "extends": "rallycoding",
+  "import/extensions": "off",
+  "import/no-unresolved": "off"
 }
