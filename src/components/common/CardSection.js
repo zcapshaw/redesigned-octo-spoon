@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { View } from 'react-native';
 
@@ -17,8 +18,8 @@ const styles = {
     justifyContent: 'flex-start',
     flexDirection: 'row',
     borderColor: '#ddd',
-    position: 'relat'
+    position: 'relative'
   }
 };
 
-export default CardSection;
+export { CardSection };
