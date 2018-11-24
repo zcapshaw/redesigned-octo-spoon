@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, TextInput } from 'react-native';
 import { Button, Card, CardSection } from './common';
 
 class LoginForm extends Component {
-  state = { email: '', password: '', error: '', loading: false };
+  state = { text: '' };
 
 
   render() {
     return (
       <Card>
         <CardSection>
-          <Text Input> words </Text>
+          <TextInput
+            value={this.state.text}
+            onChangeText={text => this.setState({ text })}
+            style={{ height: 20, width: 100 }}
+          />
         </CardSection>
 
         <CardSection>
@@ -26,13 +30,5 @@ class LoginForm extends Component {
     );
   }
 }
-
-const styles = {
-  errorTextStyle: {
-    fontSize: 20,
-    alignSelf: 'center',
-    color: 'red'
-  }
-};
 
 export default LoginForm;
